@@ -9,7 +9,6 @@ import { LoadComponentService } from './services/load-component.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
   @ViewChild(LoadComponentDirective, { static: true })
   loadComponentDirective: LoadComponentDirective;
 
@@ -21,5 +20,4 @@ export class AppComponent {
     const containerRef = this.loadComponentDirective.viewContainerRef;
     this.loadComponentService.loadComponent(containerRef)
   }
-
 }
